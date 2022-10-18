@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family:'Times New Roman', Times, serif; */
+    color: rgb(177, 117, 68);
+    font-size: 20px;
+    font-family: 'Satisfy', cursive !important;
+
+}
+img,li{
+    cursor: pointer;
+}
+.sp{
+    color: rgb(177, 117, 68);
+}
+.logo{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+.div-sale{
+    position: relative;
+}
+.sale{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(232, 154, 91);
+    color: white;
+    font-size: 20px;
+    margin-left: 70%;
+    margin-top: -70px;
+    border-left: 10px solid white;
+    transform: scale(1.4,1.2);
+    transition: all .3s;
+    transform: rotate(40deg);
+}
+.div-sale:hover .sale{
+    transform: rotate(0);
+}
+.offer li{
+    display: inline;
+    margin: 20px;
+    list-style: circle;
+}
+.fixed-image{
+    background-image: url(../images/photo2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+.pizza-img,
+.sushi-img,
+.special-img,
+.des-img{
+    border: 2px solid white;
+}
+.pizza-img:hover,
+.sushi-img:hover,
+.special-img:hover,
+.des-img:hover{
+    border-color: rgb(143, 141, 141);
+}
+.big-img{
+    position: relative;
+}
+.Add{
+    width: 120px;
+    height: 50px;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(177, 117, 68);
+    border-left: 10px solid  white;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+.add{
+    width: 150px;
+    height: 60px;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+    display: none;
+    animation: none;
+    transition: all 1s;
+}
+@keyframes add{
+    0%{
+        right: -15%;
+    }
+    100%{
+        right:0% ;
+    }
+}
+#container:hover  .add{
+    animation: add 1s 1 ;
+    display: block;
+}
+.fixed{
+    background-image: url(../images/fix.jpg);
+}
+
+input{
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(212, 210, 210);
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+textarea{
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid rgb(212, 210, 210);
+    font-size: 20px;
+    display: block;
+}
+
+footer{
+    height: 80px;
+    margin-top: 50px;
+    color: rgb(112, 103, 95);
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.footer-icon{
+    font-size: 30px;
+    word-spacing: 30px;
+}
+.i-f,.i-f1,.i-f2{
+    transition: all .5s;
+}
+.i-f:hover,
+.i-f1:hover,
+.i-f2:hover{
+    color: rgb(177, 117, 68);
+    transform: scale(1.3);
+}
+.footer-span:hover,
+.footer-span-1:hover{
+    color:rgb(12, 112, 179);
+    font-size: 15px;
+    transition: all .5s;
+}    
+.line{
+    width: 150px;
+    height: 4px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    background-color: burlywood;
+}
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-left: 50px;
+}
+.list li p{
+    margin-top: -20px;
+    font-size: 20px;
+    color: rgb(177, 117, 68);
+    margin-left: 50px;
+}
+#content{
+    width: 300px;
+    color: rgb(177, 117, 68);
+    font-size: 20px;
+    margin-top: 30px;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+#addToCart{
+    width: 150px;
+    height: 50px;
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px 20px 100px;
+    border: none;
+ }
+ .coco{
+    position: relative;
+    margin-top: 100px;
+ }
+ .co{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    animation: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: -200px;
+    transition: all 1s;
+    opacity: 0;
+    box-shadow: 10px 20px 40px rgb(251, 185, 100),-10px -20px 40px rgb(253, 179,83),
+    30px 40px 40px rgba(7,51,84,0.2),-30px -40px 40px rgba(7,51,84,0.2);
+ }
+ @keyframes coc {
+    0%{
+      top: 60%;
+      z-index: -1;
+    }
+    100%{
+        top: 0;
+        z-index: 10;
+     }
+    }
+ .container:hover .co{
+    animation: coc 1s 1;
+    visibility: visible;
+    opacity: 1;
+ }

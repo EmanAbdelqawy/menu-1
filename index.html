@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">       -->
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+      </style>
+
+    <title>task-1 js</title>
+</head>
+<body>
+    <header class="container-fluid bg-dark ">
+        <nav class=" navbar navbar-sm-expand bg-dark navbar-dark fixed-top">
+          <img class="logo ms-3" src="images/logo.jpeg">
+              <a class="navbar-brand  "style="font-size:40px" href="#">
+                <span class="sp">Re</span>ady</a>
+              <button class="navbar-toggler me-3 " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav nav-food mt-3 ms-5"style="font-size: 20px;bg-dark">
+                  <li class="nav-item">
+                    <a class="nav-link " style="color:rgb(145, 177, 89);" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  "style="color:rgb(145, 177, 89);"  href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown dropdown-food">
+                    <a class="nav-link dropdown-toggle"style="color:rgb(145, 177, 89);"  href="#" role="button" data-bs-toggle="dropdown">Our food</a>
+                    <ul class="dropdown-menu ">
+                      <li><a class="dropdown-item " href="#">pizza</a></li>
+                      <li><a class="dropdown-item" href="#">pasta</a></li>
+                      <li><a class="dropdown-item" href="#">chef</a></li>
+                      <li><a class="dropdown-item" href="#">indian food</a></li>
+                      <li><a class="dropdown-item" href="#">sushi</a></li>
+                      <li><a class="dropdown-item" href="#">deserts</a></li>
+                      <li><a class="dropdown-item" href="#">offers</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link"style="color:rgb(145, 177, 89);"  href="#">Callus</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- ///////////////////////////////////////////////////////////////// -->
+          
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+         <div class="carousel-item active">
+          <img src="images/photo1.jpeg" alt="Los Angeles" class="d-block w-100" style="height:600px ;">
+           <div class="carousel-caption m-auto col-8" style="border-radius:10px;">
+              <h3 style="font-size: 40px;margin-bottom: 180px;
+              ">Come and Live a very speacial experince with us </h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/photo-0.jpeg" alt="Chicago" class="d-block w-100" style="height:600px ;">
+            <div class="carousel-caption m-auto col-8"style="border-radius:10px;">
+              <h3 style="font-size:40px;margin-bottom: 140px;
+              ">Donot come alone 
+             <br>  you will never forget this </h3>
+            </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="images/photo3.jpeg" alt="New York" class="d-block w-100" style="height:600px ;">
+          <div class="carousel-caption m-auto col-8"  style="border-radius:10px;">
+            <h3 style="font-size: 35px;margin-bottom: 180px; ">Life is short donot miss our unique food</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/photo4.jpeg" alt="New York" class="d-block w-100" style="height:600px ;">
+          <div class="carousel-caption m-auto col-8" style="border-radius:10px ;">
+            <h3 style="font-size: 35px;margin-bottom: 190px;">If you cannot come for us we will come for you just call us</h3>
+          </div>
+        </div>
+             <!-- Indicators/dots -->
+             <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          </div>
+      <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="div-sale ms-2">
+      <div class="sale"> Offer</div>
+      <h2  style="font-size:35px ;color: rgb(177, 117, 68);margin-top: 100px ">Welcome to our restaurent</h2>
+
+      <div class= "card p-4 bg-dark text-white mt-3 d-flex m-0 ms-1" style= "width: 300;">
+        <p class="text-light" style="font-size:20px ;">Look we offer you what you need ,Now with<span 
+          style="color: rgb(177, 117, 68);"> Us</span> the food will take you all over the world  </p>
+        <ul class="offer m-0 p-0 d-flex flex-column" style="font-size:24px ;color: coral;"><p style="font-size:30px ; color:rgb(145, 177, 89);">What we offer</p>
+          <li class="col-10 ">Pizza....<img src="images/offer.jpg" style="width:100px ;height: 100px;border-radius: 50%;margin-left: 20%;"></li>
+          <li class="col-10 ">Sushi....<img src="images/offer1.jpg"style="width:100px ;height: 100px;border-radius:50%;margin-left: 20%;"> </li>
+          <li class="col-10 ">Indian...<img src="images/offer.jpg" style="width:100px ;height: 100px;border-radius: 50%;margin-left: 20%;"></li>
+          <li class="col-10 ">deserts..<img src="images/offer1.jpg" style="width:100px ;height: 100px;border-radius: 50%;margin-left: 20%;"></li>
+        </ul>
+
+        <ul class="p-0 m-0" style="list-style:none ;font-size:18px;">
+          <span style="font-size:30px; color:rgb(177, 117, 68)">Here the most fastest delevery ever
+        </span>
+          <li><i class="fas fa-phone me-2" style="color:rgb(177, 117, 68) ;"></i>PhoneNumber :010986000</li>
+        <li><i class="fas fa-address-book me-2"style="color:rgb(177, 117, 68) ;"></i>address :Tiland</li>
+        <li><i class="far fa-building me-2"style="color:rgb(177, 117, 68) ; "></i>Available all the week </li>
+        <li><i class="fab fa-first-order-alt me-2" style="color:rgb(177, 117, 68) ; "></i>you can order morning and night</li>
+       </ul>
+      </div>
+
+
+      <h1 class=" text-center mt-5" style="color: rgb(177, 117, 68) ";>Here we will tell you a story</h1>
+      <div class="fixed-image mt-5"> </div>
+    </div>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+<p class="text-center mt-5" style="color:rgb(177, 117, 68) ; font-size: 40px;">The Menu</p>
+<div id="container" class="container-fluid p-0 m-0">
+<ul class="list m-0 p-0" style="display:block ;">
+
+<section class="  d-flex mt-3 flex-wrap">
+<h2 class=" ms-2 p-0"style="color:darkolivegreen; ">Pizza.</h2>
+<div class="imgs mt-5 d-flex flex-wrap justify-content-evenly">
+<img class="pizza-img col-3"   src="images/pizza1.jpeg"style="cursor: pointer;">
+<img class="pizza-img col-3"  src="images/pizza2.jpeg"style="cursor: pointer;">
+<img class="pizza-img col-3" src="images/pizza-3.jpeg"style="cursor: pointer; "> 
+
+</div>
+<div class="big-img m-auto"style="position:relative ;">
+  <li price="20 $"><img class="big mt-5 "   src="images/pizza1.jpeg"  style="width:300px;height: 250px;cursor: pointer;" >
+    <button class="add" id="addToCart" style="margin-left: 45%;
+   border-left: 10px solid white;">add to card</button>
+        <br><p style=" color:rgb(177, 117, 68);margin-top: 100px;">
+          <del style="color:darkolivegreen" ;>80.0$</del>  50.0$  </p>
+          <p>pizza</p>
+  </li>
+  <p>
+    <i class="fas fa-star ms-5" style="color:rgb(177, 117, 68) ;"></i>
+    <i class="fas fa-star "style="color:rgb(177, 117, 68) ;"></i>
+    <i class="fas fa-star"style="color:rgb(177, 117, 68) ;"></i>
+    <i class="fas fa-star"style="color:white ;"></i>
+  </p>
+</div>
+</section>
+<!-- //////////////////////////////////////////////////////////////// -->
+
+<section class=" d-flex  flex-wrap mt-5" >
+  <h2 class="  ms-2"style="color:darkolivegreen; ">Sushi</h2>
+  <div class="imgs d-flex  flex-wrap justify-content-evenly mt-5">
+  <img class="sushi-img col-3"   src="images/sushi-1.jpeg" style="cursor:pointer ;" >
+  <img class="sushi-img col-3"  src="images/sushi-3.jpeg" style="cursor:pointer ;" >
+  <img class="sushi-img col-3" src="images/sushi-4.jpeg" style="cursor:pointer ;" >
+  
+  </div>
+  <div class="big-img m-auto">
+    <li price="20$" ><img class="big-sushi big mt-5"  src="images/sushi-4.jpeg"  style="width:300px;height: 250px;cursor:pointer ;">
+      <br><p style=" color:rgb(177, 117, 68);margin-top: 100px;">
+        <del style="color:darkolivegreen ">100.0$</del> 80.0$</p><p>sushi</p>
+      <button class="add" price="20$" id="addToCart" style="display:bloc;border-left: 10px solid white;">add to card</button>
+    </li>
+<p>
+  <i class="fas fa-star ms-5" style="color:rgb(177, 117, 68) ;"></i>
+  <i class="fas fa-star "style="color:rgb(177, 117, 68) ;"></i>
+  <i class="fas fa-star"style="color:rgb(177, 117, 68) ;"></i>
+  <i class="fas fa-star"style="color:white ;"></i>
+</p>
+</div>
+  </section>
+  <!-- /////////////////////////////////////////////////////////////////// -->
+  <section class=" d-flex  flex-wrap mt-5">
+    <h2 class="  ms-2"style="color:darkolivegreen; ">Special<br >dishes.</h2>
+    <div class="imgs flex-wrap d-flex justify-content-evenly mt-5">
+    <img class="special-img col-3"   src="images/special.jpeg" style="height:160px;cursor: pointer;" >
+    <img class="special-img col-3"  src="images/special-1.jpeg "style="height:160px;cursor: pointer;">
+    <img class="special-img col-3" src="images/sp-2.jpg "style="height:160px;cursor: pointer;" >
+    
+    </div>
+    <div class="big-img m-auto ">
+      <li price="20$" ><img class="big-special big mt-5"  src="images/special.jpeg"  style="width:300px;height: 250px;">
+        <br><p style=" color:rgb(177, 117, 68);margin-top: 100px;">
+          <del style="color:darkolivegreen;"> 60.0$</del>   20.0$</p><p>special</p>
+        <button class="add" id="addToCart" style="border-left: 10px solid white;">add to card</button>
+      </li>
+      <p>
+        <i class="fas fa-star ms-5" style="color:rgb(177, 117, 68) ;"></i>
+        <i class="fas fa-star "style="color:rgb(177, 117, 68) ;"></i>
+        <i class="fas fa-star"style="color:rgb(177, 117, 68) ;"></i>
+        <i class="fas fa-star"style="color:white ;"></i>
+      </p>
+      </div>
+    </section>
+<!-- /////////////////////////////////////////////////////////////////////////// -->
+<section class=" d-flex  flex-wrap mt-5">
+  <h2 class="  ms-2"style="color:darkolivegreen; ">Deserts.</h2>
+  <div class="imgs d-flex flex-wrap justify-content-evenly mt-5">
+  <img class="des-img col-3"   src="images/desert.jpeg" >
+  <img class="des-img col-3"  src="images/desert1.jpeg" >
+  <img class="des-img col-3" src="images/desert2.jpeg" >
+  
+  </div>
+  <div class="big-img m-auto">
+    <li price="20$"><img class="big-des big mt-5"  src="images/desert.jpeg" style="width:300px;height: 250px;">
+      <br><p style=" color:rgb(177, 117, 68);margin-top: 100px;">
+        <del style="color:darkolivegreen ;">50$</del>  20.0$ </p><p>desert</p>
+      <button class="add" id="addToCart" style="border-left: 10px solid white;">add to card</button>
+    </li>
+    <p>
+      <i class="fas fa-star ms-5" style="color:rgb(177, 117, 68) ;"></i>
+      <i class="fas fa-star "style="color:rgb(177, 117, 68) ;"></i>
+      <i class="fas fa-star"style="color:rgb(177, 117, 68) ;"></i>
+      <i class="fas fa-star"style="color:white ;"></i>
+    </p>
+    </div>
+  </section>
+</ul>
+
+<!-- /////////////////////////////////////// -->
+
+<div class="container coco" style="width:80% ;min-height:200px;">
+  <p class="text-center" style=" color: rgb(177, 117, 68);">Click Here to Show The order</p>
+  <div class="co ps-2" style="background-color:black ;">
+  <div id="content">
+  </div>   
+
+  <button id="AddToCart" class="Add" style="display:none;">Show Price</button>
+  <div id="show-price"style="display:inline;width:180px; height: 65px;font-size:25px;margin-left:20px; color:rgb(177, 117, 68);" >
+    
+  </div>
+  </div>
+</div>
+
+
+  <!-- ////////////////////////////////////////////////////////////////////////// -->
+  <div class="fixed-image mt-5 fixed">
+
+  </div>
+  <h2 class="text-center m-3 " style="font-weight:bold ;color: rgb(177, 117, 68);">Our Chefs</h2>
+  <span class="line"> </span>
+  <div class="thank d-flex" style="justify-content:space-evenly ;flex-wrap: wrap;">
+      <!-- card 1 -->
+      <div class="card m-3 bg-light text-light col-sm-12 col-md-6 " style="width: 16rem;">
+        <img src="images/work.jpeg" class="card-img-top ps-3 pe-3" >
+        <div class="card-body">
+        <p class="card-text text-dark"style="font-size:25px ;">Feras</p>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="card m-3 bg-light text-light col-sm-12 col-md-6 " style="width: 16rem;">
+        <img src="images/work2.jpeg" class="card-img-top ps-3 pe-3">
+        <div class="card-body">
+        <p class="card-text text-dark" style="font-size:25px ;">Fayrouz</p>
+        </div>
+      </div>
+  </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////// -->
+  <h2 class="text-center pt-4 " style="font-weight:bold ;color: rgb(177, 117, 68);">Join Us</h2>
+<!-- card-1 -->
+<div class="join d-flex " style="justify-content:center ;flex-wrap:wrap">
+<div class="card m-3 bg-dark pt-4" style="width: 18rem;">
+  <div class="card-body text-light d-flex flex-column text-center border-light">
+    <h6 class="card-title mb-4"style="font-weight:bold ;">delevery servece on whatsapp
+    </h6>
+    <a href="#" target="_blank" class="card-link" style="font-weight:bold ;color: rgb(177, 117, 68);"> <i class="fab fa-whatsapp-square"style="color: rgb(177, 117, 68);font-size: 35px;"></i></a>
+  </div>
+</div>
+<!-- card 2 -->
+<div class="card m-3 bg-dark pt-4" style="width: 18rem;">
+  <div class="card-body text-light d-flex flex-column text-center">
+    <h6 class="card-title mb-4"style="font-weight:bold ;">Follow us on instagram
+    </h6>
+    <a href="#" target="_blank" class="card-link" style="font-weight:bold ;color: rgb(177, 117, 68);"><i class="fab fa-instagram-square"style="color: rgb(177, 117, 68);font-size:35px;"></i></a>
+  </div>
+</div>
+<!-- card 3 -->
+<div class="card m-3 bg-dark pt-4" style="width: 18rem;">
+  <div class="card-body text-light d-flex flex-column text-center">
+    <h6 class="card-title mb-4"style="font-weight:bold ;">our page on facebook
+    </h6>
+    <a href="#" target="_blank" class="card-link" style="font-weight:bold ;color: rgb(177, 117, 68);"><i class="fab fa-facebook-square" style="color: rgb(177, 117, 68) ;font-size: 35px;"></i></a>
+  </div>
+</div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div class="get-content d-flex mt-5 m-auto">
+      <form  method="get" autocomplete="on" >
+          <input class="bg-dark" type="text" placeholder="name" required>
+          <input class="bg-dark" type="tel" placeholder="phone" >
+          <input class="bg-dark" type="text" placeholder="address">
+      </form>
+  </div>
+
+  <textarea class="area bg-dark text-light" rows="10" cols="10" placeholder="Please,Write your opinion in our food"></textarea>
+<footer>
+  <div class="footer-content bg-dark container-fluid w-100">
+    <div class="footer-info">
+        <span class="footer-span">
+           Designed by Eman Abdelqawy |
+       </span>  
+    </div>
+   <div class="footer-icon bg-dark">
+      <i class="fab fa-facebook-f i-f"></i>
+       <i class="fab fa-twitter i-f1"></i>
+      <i class="fas fa-wifi i-f2"></i>
+   </div>
+  </div>
+</footer>
+
+</header>   
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" ></script>
+</body>
+</html>
